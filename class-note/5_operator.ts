@@ -33,10 +33,12 @@ interface Person {
 
 function askSomeone(someone: Developer | Person) {
     // 공통된 속성에만 접근 가능
-    someone.name,
+    someone.name
     // someone.skill,
     // someone.age
 }
+askSomeone({name: '디벨로퍼', skill: '웹 개발'});
+askSomeone({name: '캡틴', age: 100});
 
 function askEveryone(someone: Developer & Person) {
     // 모든 속성에 접근 가능
@@ -44,6 +46,7 @@ function askEveryone(someone: Developer & Person) {
     someone.skill,
     someone.age
 }
+askEveryone({name: '디벨로퍼', skill: '웹 개발', age: 100})
 
 // intersection type
 let capt: string & number & boolean;
