@@ -44,6 +44,14 @@ interface StringRegexDictionary {
     [key: string]: RegExp;
 }
 
+interface StringNumberDictionary {
+    [key: string]: number
+}
+
+interface StringObjectDictionary {
+    [key: string]: {num: number}
+}
+
 let obj: StringRegexDictionary = {
     // sth: /abc/
     cssFile: /\.css$/,

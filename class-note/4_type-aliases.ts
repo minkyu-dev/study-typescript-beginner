@@ -1,7 +1,7 @@
-type Person = {
-    name: string,
-    age: number
-}
+// type Person = {
+//     name: string,
+//     age: number
+// }
 
 interface Person {
     name: string,
