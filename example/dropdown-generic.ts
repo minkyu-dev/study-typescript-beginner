@@ -49,12 +49,12 @@ function createDropdownItem(item: Item<string> | Item<number>) {
 // NOTE: 이메일 드롭 다운 아이템 추가
 emails.forEach(function (email) {
   const item = createDropdownItem(email);
-  const selectTag = document.querySelector('#email-dropdown');
-  if(selectTag !== null) selectTag.appendChild(item);
+  const selectTag = document.querySelector('#email-dropdown') as HTMLSelectElement;
+  selectTag.appendChild(item);
 });
 
 numberOfProducts.forEach(function (product) {
   const item = createDropdownItem(product);
-  const selectTag = document.querySelector('#product-dropdown');
-  if(selectTag !== null) selectTag.appendChild(item);
+  const selectTag = document.querySelector('#product-dropdown') as HTMLSelectElement;
+  selectTag.appendChild(item);
 });
