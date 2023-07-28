@@ -22,3 +22,6 @@ let detailedItem: DetailsDropdown<string> = {
     value: '',
     tag: ''
 }
+
+// Best common Type
+let arr = [1, 2, true];
