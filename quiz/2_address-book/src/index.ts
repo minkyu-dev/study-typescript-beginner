@@ -1,5 +1,4 @@
-import {Contact} from './contact'
-import {PhoneType} from './phone-type'
+import {Contact, PhoneType} from './types'
 
 // api
 // TODO: 아래 함수의 반환 타입을 지정해보세요.
